@@ -19,7 +19,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(isGrounded)
+        {
+            rb.gravityScale = 2.0f;
+        }
+        else if(!isGrounded)
+        {
+            rb.gravityScale = 2.1f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
