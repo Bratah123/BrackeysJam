@@ -30,6 +30,15 @@ public class HoleSpawn : MonoBehaviour
             Destroy(Portal, 2f);
 
         }
+        if (Input.GetKey(KeyCode.J) && Time.time > nextSpawn)
+        {
+            nextSpawn = Time.time + spawnSpeed;
+
+            GameObject Portal = Instantiate(portalPrefab, HolePoint.transform.position, Quaternion.identity);
+
+            Destroy(Portal, 2f);
+
+        }
 
     }
 }

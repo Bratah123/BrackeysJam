@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Transform playerPos;
     public GameObject groundCheck;
     public Camera cam;
+    public GameObject player;
 
     // The position of where the hole spawns
     public GameObject holePos;
@@ -17,14 +18,18 @@ public class PlayerController : MonoBehaviour
     public float jumpPower = 5f;
 
     public bool isGrounded;
+    bool facingLeft;
 
     Vector2 movement;
     Vector2 mousePos;
 
+
     // Update is called once per frame
     void Update()
     {
-        if(isGrounded)
+        Vector3 leftHole = new Vector3(-5.0f, playerPos.position.y, 0f);
+        Vector3 rightHole = new Vector3(5.0f, playerPos.position.y, 0f);
+        if (isGrounded)
         {
             rb.gravityScale = 2.0f;
         }
@@ -50,27 +55,21 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.D))
         {
             playerPos.position += Vector3.right * moveSpeed * Time.fixedDeltaTime;
+            facingLeft = false;
+            player.GetComponent<SpriteRenderer>().flipX = false;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             playerPos.position += Vector3.left * moveSpeed * Time.fixedDeltaTime;
+            facingLeft = true;
+            player.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
         }
-
-        Vector2 lookDir = mousePos - rb.position;
-
-        float atanAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-
-        holePos.GetComponent<Rigidbody2D>().rotation = atanAngle;
-
-        Vector3 yTrans = playerPos.transform.position;
-
-        holePos.GetComponent<Transform>().position = playerPos.transform.position;
     }
 
     void Jump()
@@ -78,4 +77,5 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(new Vector2(0f, 1f) * jumpPower, ForceMode2D.Impulse);
         isGrounded = false;
     }
+
 }
