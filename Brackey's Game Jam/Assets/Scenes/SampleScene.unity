@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 922704060}
   - component: {fileID: 922704059}
   - component: {fileID: 922704064}
+  - component: {fileID: 922704062}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -424,6 +425,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &922704062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922704058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fa29614759b1047bfe20f2066afe7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalPrefab: {fileID: 6736382961251909521, guid: 7ad85875a7bb1ed41847826389c3e3ac,
+    type: 3}
+  HolePoint: {fileID: 1545720413}
+  maxHoles: 1
+  holesAmount: 0
 --- !u!4 &922704063
 Transform:
   m_ObjectHideFlags: 0

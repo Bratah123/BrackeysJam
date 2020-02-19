@@ -7,26 +7,28 @@ public class HoleSpawn : MonoBehaviour
     public GameObject portalPrefab;
     public Transform HolePoint;
 
-    public int maxHoles = 1;
-    public int holesAmount;
+    public float spawnSpeed = 2.5f;
+    private float nextSpawn;
+
+    bool portalActive;
+
     void Start()
     {
-        
+        portalActive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+
+        if (Input.GetButtonDown("Fire1") && Time.time > nextSpawn)
         {
+            nextSpawn = Time.time + spawnSpeed;
+
             GameObject Portal = Instantiate(portalPrefab, HolePoint.transform.position, Quaternion.identity);
 
-            if (holesAmount >= maxHoles)
-            {
-                Destroy(Portal);
-                holesAmount--;
-            }
-                holesAmount++;
+            Destroy(Portal, 2f);
+
         }
 
     }
