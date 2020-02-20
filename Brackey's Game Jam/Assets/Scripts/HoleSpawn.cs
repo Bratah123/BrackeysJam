@@ -6,6 +6,7 @@ public class HoleSpawn : MonoBehaviour
 {
     public GameObject portalPrefab;
     public Transform HolePoint;
+    public GameObject player;
 
     public float spawnSpeed = 2.5f;
     private float nextSpawn;
@@ -29,8 +30,10 @@ public class HoleSpawn : MonoBehaviour
 
             Destroy(Portal, 2f);
 
+            player.GetComponent<Animator>().SetBool("isAttacking", true);
+
         }
-        if (Input.GetKey(KeyCode.J) && Time.time > nextSpawn)
+        else if (Input.GetKey(KeyCode.J) && Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnSpeed;
 
@@ -38,6 +41,12 @@ public class HoleSpawn : MonoBehaviour
 
             Destroy(Portal, 2f);
 
+            player.GetComponent<Animator>().SetBool("isAttacking", true);
+
+        }
+        else
+        {
+            player.GetComponent<Animator>().SetBool("isAttacking", false);
         }
 
     }

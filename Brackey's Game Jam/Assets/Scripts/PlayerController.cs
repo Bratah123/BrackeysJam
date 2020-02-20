@@ -57,13 +57,18 @@ public class PlayerController : MonoBehaviour
             playerPos.position += Vector3.right * moveSpeed * Time.fixedDeltaTime;
             facingLeft = false;
             player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<Animator>().SetBool("isRunning", true);
         }
-
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             playerPos.position += Vector3.left * moveSpeed * Time.fixedDeltaTime;
             facingLeft = true;
             player.GetComponent<SpriteRenderer>().flipX = true;
+            player.GetComponent<Animator>().SetBool("isRunning", true);
+        }
+        else
+        {
+            player.GetComponent<Animator>().SetBool("isRunning", false);
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
