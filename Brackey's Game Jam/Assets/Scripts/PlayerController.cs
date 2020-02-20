@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.gravityScale = 2.1f;
         }
+
+        Die();
 
         mousePos = cam.WorldToScreenPoint(Input.mousePosition);
     }
@@ -83,4 +86,11 @@ public class PlayerController : MonoBehaviour
         isGrounded = false;
     }
 
+    void Die()
+    {
+        if(player.GetComponent<Transform>().position.y < -3f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 }
