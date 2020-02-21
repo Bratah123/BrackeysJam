@@ -25,4 +25,13 @@ public class MainMenuButtons : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void LevelSelector()
+    {
+        SceneManager.LoadScene("LevelSelector");
+    }
+    public void TutorialLevel()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
