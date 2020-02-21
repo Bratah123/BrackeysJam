@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isGrounded;
     bool facingLeft;
+    bool isJumping;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -42,6 +43,11 @@ public class PlayerController : MonoBehaviour
         Die();
 
         mousePos = cam.WorldToScreenPoint(Input.mousePosition);
+
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            isJumping = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -74,8 +80,9 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<Animator>().SetBool("isRunning", false);
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (isJumping)
         {
+            isJumping = false;
             Jump();
         }
     }
