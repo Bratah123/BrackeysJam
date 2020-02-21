@@ -34,6 +34,11 @@ public class MainMenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void Level1()
     {
         SceneManager.LoadScene("Level1");

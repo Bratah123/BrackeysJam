@@ -529,9 +529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Start Game
-
-'
+  m_Text: 
 --- !u!222 &762858565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1122,8 +1120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: 39}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -312, y: 38.25}
+  m_SizeDelta: {x: 83.6, y: 76.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1778991219
 MonoBehaviour:
@@ -1197,8 +1195,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a9fb79317edea214b9b53038662100c3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
