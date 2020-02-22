@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 4456a1953f7c44645acfdcdeebdec4ff
+guid: 5ed7d5216635a6f41b2291a5064a76c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8092295105046505211
-    second: explosion_0
+      213: -4292495330238500785
+    second: cannonball_0
   - first:
-      213: -5243772346084840235
-    second: explosion_1
+      213: 1500735761937186445
+    second: cannonball_1
   - first:
-      213: -4009157606203222040
-    second: explosion_2
+      213: 6258328327730076036
+    second: cannonball_2
   - first:
-      213: 3730887761424324059
-    second: explosion_3
+      213: 4661073482826700418
+    second: cannonball_3
+  - first:
+      213: -5251458285348032048
+    second: cannonball_4
+  - first:
+      213: 4258665146174484675
+    second: cannonball_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explosion_0
+      name: cannonball_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55eb7d19371239d41b19d48353c63a22
-      internalID: -8092295105046505211
+      spriteID: f8d66257c3d9b634b91f6ecc113e2e8e
+      internalID: -4292495330238500785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion_1
+      name: cannonball_1
       rect:
         serializedVersion: 2
         x: 32
@@ -133,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc38e952f76e5154f9d6384d66f4ef44
-      internalID: -5243772346084840235
+      spriteID: 948cd7e27beb0fd4a9225f197636344d
+      internalID: 1500735761937186445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion_2
+      name: cannonball_2
       rect:
         serializedVersion: 2
         x: 64
@@ -154,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aa8abe7c7879994aa666126c3379167
-      internalID: -4009157606203222040
+      spriteID: c7cc9e6ba4dc1cf4b83e09a37b2035f7
+      internalID: 6258328327730076036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion_3
+      name: cannonball_3
       rect:
         serializedVersion: 2
         x: 96
@@ -175,8 +181,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf830794980e6b439b34e0142c48393
-      internalID: 3730887761424324059
+      spriteID: c930de40bc03182468b13e64c0c54b9b
+      internalID: 4661073482826700418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cannonball_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b682b45aa0774458d435f8154271a0
+      internalID: -5251458285348032048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cannonball_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f60c08d05430d4294e4d6670e722d3
+      internalID: 4258665146174484675
       vertices: []
       indices: 
       edges: []
