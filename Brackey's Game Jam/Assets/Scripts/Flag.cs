@@ -10,6 +10,7 @@ public class Flag : MonoBehaviour
         if(collision.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerController.deathAmount = 0;
         }
     }
 }
