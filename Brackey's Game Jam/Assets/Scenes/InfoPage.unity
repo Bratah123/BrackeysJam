@@ -495,7 +495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.8, y: -173.15}
+  m_AnchoredPosition: {x: -0.000012398, y: -209}
   m_SizeDelta: {x: 92.6, y: 80.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569915156
@@ -622,8 +622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076294, y: 56.2}
-  m_SizeDelta: {x: 490.3, y: 378.5}
+  m_AnchoredPosition: {x: -0.000012398, y: 38}
+  m_SizeDelta: {x: 503.6, y: 398.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576346058
 MonoBehaviour:
@@ -656,11 +656,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Go Forward, is a puzzle platformer game where all your abilities only allow
-    you to go forward. As your character has been captured and too scared to ever
-    look back.\n\nControls: \nLeft: A\nRight: D\nPortal: Mouse1 or J\n\nThis game
-    was developed by Brandon Nguyen Art by Charles Nguyen. First Game I've ever made
-    so enjoy!"
+  m_Text: "Go Forward: Your character has been captured and is too scared to look
+    back. All your abilities only allow you to go forward.\n\nControls: \nLeft: A\nRight:
+    D\nPortal: Mouse1 or J\n\nThis game was developed by Brandon Nguyen.\n\nArt by
+    Charles Nguyen.\n\n First Game I've ever made so enjoy!"
 --- !u!222 &1576346059
 CanvasRenderer:
   m_ObjectHideFlags: 0
