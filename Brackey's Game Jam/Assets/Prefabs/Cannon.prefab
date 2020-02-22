@@ -97,6 +97,8 @@ MonoBehaviour:
   cannonBall: {fileID: 8926650216800042264, guid: bae62ad39592a134f877d9418611bb88,
     type: 3}
   firePoint: {fileID: 8201763125831876495}
+  cannonEffect: {fileID: 5475560478912371901, guid: 66d0bb6c0dbc94a4fb4e149833fcfc2b,
+    type: 3}
   cannonBallSpeed: 10
   shootSpeed: 1
   nextShot: 0
