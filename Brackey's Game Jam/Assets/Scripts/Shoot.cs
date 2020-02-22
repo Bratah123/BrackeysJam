@@ -19,8 +19,10 @@ public class Shoot : MonoBehaviour
         if(Time.time > nextShot)
         {
             nextShot = Time.time + shootSpeed;
+
             GameObject Ball = Instantiate(cannonBall, firePoint.position, Quaternion.identity);
             GameObject Explosion = Instantiate(cannonEffect, firePoint.position, Quaternion.identity);
+
             Ball.GetComponent<Rigidbody2D>().AddForce(Vector2.right * cannonBallSpeed, ForceMode2D.Impulse);
             Destroy(Explosion, 0.2f);
             Destroy(Ball, 3f);
