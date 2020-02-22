@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float jumpPower = 5f;
+    public static int deathAmount;
 
     public bool isGrounded;
     bool facingLeft;
@@ -98,6 +99,7 @@ public class PlayerController : MonoBehaviour
         if(player.GetComponent<Transform>().position.y < -3f)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            PlayerController.deathAmount++;
         }
     }
 }
