@@ -63,4 +63,9 @@ public class MainMenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Level6");
     }
+    public void Level7()
+    {
+        SceneManager.LoadScene("Level7");
+    }
+
 }

@@ -15,7 +15,7 @@ public class BallCollide : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             PlayerController.deathAmount++;
         }
-        else if(collision != null)
+        else if(collision.tag == "Ground")
         {
             GameObject Explosion = Instantiate(explosionEffect, cannonBall.GetComponent<Transform>().position, Quaternion.identity);
             Destroy(Explosion, .3f);

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Lightning
   layers:
   - Default
   - TransparentFX

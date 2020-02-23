@@ -57,6 +57,10 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+        else if(collision.tag == "Lightning")
+        {
+            moveSpeed = 10f;
+        }
     }
     void FixedUpdate()
     {
